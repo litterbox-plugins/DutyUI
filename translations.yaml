@@ -1,0 +1,8 @@
+plugin_translations:
+  duty_on: "{player} are now on duty."
+  duty_off: "{player} are now off duty."
+  group_error: "Error! The group {group} don't exist."
+  duty_nopermission: "You don't have any duty permissions."
+  player_notfound: "Error! Player not found."
+  player_onduty: "{player} Are on duty."
+  player_offduty: "{player} Are off duty."

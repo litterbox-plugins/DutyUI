@@ -1,0 +1,9 @@
+configuration:
+  enabled: true
+  superadminpermission: duty.superadmin
+  announcecolor: green
+DutyGroups:
+  - groupid: admin
+    permission: duty.admin
+  - groupid: mod
+    permission: duty.mod
