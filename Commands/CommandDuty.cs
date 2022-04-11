@@ -56,7 +56,6 @@ namespace DutyUI.Commands
                             m_DutyUI.DutysOn.Add(actor.SteamId);
                             await UniTask.SwitchToMainThread();
                             EffectManager.sendUIEffect(31200, 200, actor.SteamId, true);
-                            EffectManager.sendUIEffect(31201, 201, true, m_StringLocalizer["plugin_translations:duty_on", new { player = actor.DisplayName }]);
                             ChatManager.serverSendMessage(m_StringLocalizer["plugin_translations:duty_on", new { player = actor.DisplayName }], UnityEngine.Color.green, null, null, EChatMode.SAY, null, true);
                         }
                         else if (userData.Roles.Contains(dgroup.GroupID))
@@ -65,7 +64,6 @@ namespace DutyUI.Commands
                             m_DutyUI.DutysOn.Remove(actor.SteamId);
                             await UniTask.SwitchToMainThread();
                             EffectManager.askEffectClearByID(31200, actor.SteamId);
-                            EffectManager.sendUIEffect(31201, 201, true, m_StringLocalizer["plugin_translations:duty_off", new { player = actor.DisplayName }]);
                             ChatManager.serverSendMessage(m_StringLocalizer["plugin_translations:duty_off", new { player = actor.DisplayName }], UnityEngine.Color.green, null, null, EChatMode.SAY, null, true);
                         }
                         else
