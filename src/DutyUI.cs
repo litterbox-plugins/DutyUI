@@ -30,7 +30,7 @@ namespace DutyUI
             // await UniTask.SwitchToMainThread();
             if (!m_Configuration.GetSection("configuration:enabled").Get<bool>())
             {
-                m_Logger.LogInformation(" Plugin disabled! Please enable it in the config");
+                m_Logger.LogInformation("Plugin disabled! Please enable it in the config");
                 await this.UnloadAsync();
                 return; 
             }

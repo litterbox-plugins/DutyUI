@@ -33,8 +33,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="config.yaml" />
-    <EmbeddedResource Include="translations.yaml" />
+    <EmbeddedResource Include="src/config.yaml" />
+    <EmbeddedResource Include="src/translations.yaml" />
   </ItemGroup>
 
 </Project>
